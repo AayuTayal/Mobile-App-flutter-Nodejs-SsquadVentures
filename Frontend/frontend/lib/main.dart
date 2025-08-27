@@ -1,13 +1,8 @@
-import 'dart:io' show Platform;
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 
-// API base URL to connect with the Backend
-final apiBase =
-    kIsWeb || Platform.isWindows || Platform.isLinux || Platform.isMacOS
-    ? 'http://localhost:4000'
-    : 'https://276077cee547.ngrok-free.app';
+// API base URL which is the deployed url to connect with the Backend
+final apiBase = 'https://mobile-app-flutter-nodejs-ssquadventures.onrender.com';
 
 //--------- OfferWithin mapping----------
 //In Backend the GetOfferWithin field is stored as Number because it will help finding the requests which deadline is near
